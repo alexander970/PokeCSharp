@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="PokeCSharp.db" />
+    <None Remove="PokeCSharpDB.db" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="PokeCSharp.db">
+    <Content Include="PokeCSharpDB.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
