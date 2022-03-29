@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCSharp.UI", "PokeCSharp.UI\PokeCSharp.UI.csproj", "{78ADE969-289D-4D35-8EC5-38C882CF087F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeCSharp.UI", "PokeCSharp.UI\PokeCSharp.UI.csproj", "{78ADE969-289D-4D35-8EC5-38C882CF087F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCSharp.DataAccess", "PokeCSharp.DataAccess\PokeCSharp.DataAccess.csproj", "{602AABDB-5CDD-4D39-BC9D-E91713974ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeCSharp.DataAccess", "PokeCSharp.DataAccess\PokeCSharp.DataAccess.csproj", "{602AABDB-5CDD-4D39-BC9D-E91713974ACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCSharp.Models", "PokeCSharp.Models\PokeCSharp.Models.csproj", "{70900AB3-3218-46D0-A70C-73AC72258CCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeCSharp.Models", "PokeCSharp.Models\PokeCSharp.Models.csproj", "{70900AB3-3218-46D0-A70C-73AC72258CCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37678807-1E0C-4E74-8F2F-0FEC94FE788B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
