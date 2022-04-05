@@ -1,8 +1,14 @@
-using PokeCSharp.DataAccess;
-using PokeCSharp.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PokeCSharp.UI;
-
 public partial class MainForm : Form
 {
     public MainForm()
@@ -10,12 +16,21 @@ public partial class MainForm : Form
         InitializeComponent();
     }
 
-    private void MainForm_Load(object sender, EventArgs e)
+    private void listPokemonsToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        List<PokemonModel> pokemons = SqliteDataAccess.LoadPokemons();
+        ListPokemonsForm pokemonForm = new ListPokemonsForm();
 
+        pokemonForm.ShowDialog(this);
 
-        pokemonDataGridView.AutoGenerateColumns = true;
-        pokemonDataGridView.DataSource = pokemons;
+        pokemonForm.Dispose();
+    }
+
+    private void searchPokemonToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        SearchPokemonForm searchPokemonForm = new SearchPokemonForm();
+
+        searchPokemonForm.ShowDialog(this);
+
+        searchPokemonForm.Dispose();
     }
 }

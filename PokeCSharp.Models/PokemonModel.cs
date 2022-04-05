@@ -9,7 +9,7 @@ public class PokemonModel
     public int PokemonId { get; set; }
 
     [Required]
-    public string PokemonName { get; set; } = string.Empty;
+    public string PokemonName { get; set; } = default!;
 
     [Required]
     public int Height { get; set; }
