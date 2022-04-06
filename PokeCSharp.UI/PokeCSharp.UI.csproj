@@ -27,6 +27,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ListGamesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListLocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListRegionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListPokemonMovesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListPokemonTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

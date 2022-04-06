@@ -15,7 +15,7 @@ public partial class ListPokemonsForm : Form
         List<PokemonModel> pokemons = SqliteDataAccess.GetAllPokemons();
 
 
-        pokemonDataGridView.AutoGenerateColumns = true;
-        pokemonDataGridView.DataSource = pokemons;
+        this.pokemonDataGridView.AutoGenerateColumns = true;
+        this.pokemonDataGridView.DataSource = pokemons;
     }
 }

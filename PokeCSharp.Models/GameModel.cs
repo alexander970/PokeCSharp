@@ -7,5 +7,5 @@ public class GameModel
     public int GameId { get; set; }
 
     [Required]
-    public int GameName { get; set; } = default!;
+    public string GameName { get; set; } = default!;
 }
