@@ -12,22 +12,26 @@ public static class SqliteDataAccess
     {
         return ConfigurationManager.ConnectionStrings[id].ConnectionString;
     }
-    public static List<PokemonModel> GetAllPokemons()
+
+    private static List<T> GetAll<T>(string query)
     {
         string connectionString = LoadConnectionString();
         using (IDbConnection connection = new SQLiteConnection(connectionString))
         {
-            List<PokemonModel> pokemons = connection
-               .Query<PokemonModel>("SELECT PokemonId,PokemonName, Height,Weight,BaseExperience,[Order], IsDefault FROM Pokemon")
+            List<T> pokemons = connection
+               .Query<T>(query)
                .ToList();
 
             return pokemons;
         }
-
-       
     }
 
-    public static PokemonModel SearchPokemon(string pokemonName)
+    public static List<PokemonModel> GetAllPokemons()
+    {
+        return GetAll<PokemonModel>("SELECT PokemonId,PokemonName, Height,Weight,BaseExperience,[Order], IsDefault FROM Pokemon");
+    }
+
+    public static PokemonModel? SearchPokemon(string pokemonName)
     {
         string connectionString = LoadConnectionString();
         using IDbConnection connection = new SQLiteConnection(connectionString);
